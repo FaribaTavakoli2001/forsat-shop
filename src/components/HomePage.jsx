@@ -43,13 +43,14 @@ function HomePage() {
           <img 
           style={{
             width:'500px',
-            height: '200px'
+            height: '300px'
           }}
           src='../src/assets/imagecover.png' />
         </Grid>
           <Grid item>
           <Button
           sx={{
+            margin:'10px',
             background:'purple',
           }}
           variant="contained">خرید گیف کارت</Button>
@@ -73,7 +74,6 @@ function HomePage() {
         minWidth: '120px',
         borderRadius: '50px 14px 50px 50px',
         position: 'relative',
-        background: '#f4f2fe',
         paddingTop: '4px',
         background: 'linear-gradient(125deg, #f4f2fe 0%, #faf8fe 100%)',
       }}>
@@ -91,7 +91,7 @@ function HomePage() {
       width:'300px'
     }}
      variant='p' component='p'>
-     گیفت کارت های مورد نظرتون رو از بین 16 نوع محصول فرصت شاپ انتخاب کنید
+     گیفت کارت های مورد نظرتون رو از بین 10 نوع محصول فرصت شاپ انتخاب کنید
      </Typography>
     </Box>
     <Box
@@ -144,7 +144,6 @@ function HomePage() {
       minWidth: '120px',
       borderRadius: '50px 14px 50px 50px',
       position: 'relative',
-      background: '#f4f2fe',
       paddingTop: '4px',
       background: 'linear-gradient(125deg, #f4f2fe 0%, #faf8fe 100%)',
     }}>
@@ -190,10 +189,10 @@ function HomePage() {
         justifyContent:'center',
         alignItems:'center'
        }}>
-        <Options />
+       <Gift />
        </Grid>
        <Grid item>
-       <Gift />
+        <Options />
        </Grid>
     </Container>
   )
