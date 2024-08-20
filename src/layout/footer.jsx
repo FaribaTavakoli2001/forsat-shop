@@ -105,9 +105,8 @@ function Footer() {
       mt: 4,
     }}>
           <Grid container
-          xs={12}
           sx={{
-            marginRight:'80px'
+            marginRight:'150px'
           }}
           >
             <Grid item
