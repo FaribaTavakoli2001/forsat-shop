@@ -7,54 +7,41 @@ import Gift from './Gift'
 function HomePage() {
   return (
     <Container maxWidth='xl'>
-       <Grid container spacing={2}>
-        <Grid
-         style={{
-          display:'flex',
-          justifyContent:'space-between',
-          alignItems:'right',
-          marginTop:'30px'
+      <Grid container spacing={3} sx={{ marginBottom:'40px', alignItems: 'center' }}>
+  <Grid item xs={6}>
+    <Typography fontWeight={500} sx={{ marginTop: '40px'}} variant="p" component="h1">
+      خرید گیفت کارت
+    </Typography>
+    <Typography sx={{ marginTop: '10px', color: 'GrayText' }} variant="p" component="p">
+      فرصت شاپ سایت رسمی و معتبر فروش گیفت کارت به صورت آنلاین با تحویل سریع است. با فرصت شاپ به راحتی کارت هدیه یا همان گیفت کارت های محبوب مانند گیفت کارت آیتونز ، گوگل پلی ، پلی استیشن ، ایکس باکس، اسپاتیفای ، استیم، اسکایپ ، ریزرگلد ، بتل نت ،روبلاکس، پابجی موبایل ، گیم پس ، مسترکارت و ... که نیاز دارید را بخرید و بابت هر خرید امتیاز دریافت کنید ، با افزایش امتیاز و تبدیل آنها به کد تخفیف در خرید های بعدی تخفیف بگیرید ، ما در فرصت شاپ به صورت 24 ساعته پشتیبان شما هستیم.
+
+      شما با خرید گیفت کارت از فرصت شاپ خیلی راحت و بدون نیاز به کارت های بین المللی می توانید هر پرداختی در پلتفرم های مختلف دارید را انجام دهید. پرداخت های درون برنامه ای ، خرید و شارژ آیکلود ، خرید بازی ها در کنسول های مختلف بازی از جمله پر طرفدار ترین پرداخت هایی است که کاربران با گیفت کارت انجام می دهند.
+
+      تمام محصولات موجود در فرصت شاپ کاملا به صورت قانونی و رسمی به مشتریان عزیز ارائه می شوند.
+    </Typography>
+    <Button
+      sx={{
+        marginTop: '30px',
+        background: 'purple',
       }}
-        item>
-        <Typography
-        fontWeight={500}
-        variant='p' component='h1' >
-        خرید گیفت کارت
-        </Typography>
-        </Grid>
-        <Grid 
-        sx={{
-          display:'flex',
-          justifyContent:'space-between',
-        }}
-        item >
-          <Typography
-          sx={{
-            marginLeft:'30px',
-            color:'GrayText'
-          }}
-          variant='p' component='p'>
-          فرصت شاپ سایت رسمی و معتبر فروش گیفت کارت به صورت آنلاین با تحویل سریع است. با فرصت شاپ به راحتی کارت هدیه یا همان گیفت کارت های محبوب مانند گیفت کارت آیتونز ، گوگل پلی ، پلی استیشن ، ایکس باکس، اسپاتیفای ، استیم، اسکایپ ، ریزرگلد ، بتل نت ،روبلاکس، پابجی موبایل ، گیم پس ، مسترکارت و ... که نیاز دارید را بخرید و بابت هر خرید امتیاز دریافت کنید ، با افزایش امتیاز و تبدیل آنها به کد تخفیف در خرید های بعدی تخفیف بگیرید ، ما در فرصت شاپ به صورت 24 ساعته پشتیبان شما هستیم.
+      variant="contained"
+    >
+      خرید گیف کارت
+    </Button>
+  </Grid>
+  <Grid item xs={6}>
+    <img
+      style={{
+        width: '100%',
+        height: 'auto',
+        maxWidth: '500px',
+      }}
+      src='../src/assets/imagecover.png'
+      alt="Gift card cover"
+    />
+  </Grid>
+</Grid>
 
-شما با خرید گیفت کارت از فرصت شاپ خیلی راحت و بدون نیاز به کارت های بین المللی می توانید هر پرداختی در پلتفرم های مختلف دارید را انجام دهید. پرداخت های درون برنامه ای ، خرید و شارژ آیکلود ، خرید بازی ها در کنسول های مختلف بازی از جمله پر طرفدار ترین پرداخت هایی است که کاربران با گیفت کارت انجام می دهند.
-
-تمام محصولات موجود در فرصت شاپ کاملا به صورت قانونی و رسمی به مشتریان عزیز ارائه می شوند.
-          </Typography>
-          <img 
-          style={{
-            width:'500px',
-            height: '300px'
-          }}
-          src='../src/assets/imagecover.png' />
-        </Grid>
-          <Grid item>
-          <Button
-          sx={{
-            margin:'10px',
-            background:'purple',
-          }}
-          variant="contained">خرید گیف کارت</Button>
-          </Grid>
         <Grid container spacing={1}>
         <Box
       width={400}
@@ -159,7 +146,6 @@ function HomePage() {
      </Typography>
     </Box>
         </Grid>
-       </Grid>
        <Grid item
         sx={{
           margin:'40px'
