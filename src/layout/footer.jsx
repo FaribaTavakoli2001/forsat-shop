@@ -7,9 +7,14 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
+    <div style={{
+      display:'flex',
+      // justifyContent: 'center',
+      alignItems:'center'
+    }}>
        <Box
       sx={{
+        display:'felx',
         backgroundColor: '#fff',
         color: 'GrayText',
         py: 4,
@@ -18,18 +23,16 @@ function Footer() {
     >
       <Container maxWidth="lg">
         <Grid container spacing={4}>
-          {/* بخش اطلاعات تماس */}
           <Grid item xs={12} md={4}>
             <Grid item 
             sx={{
               display:'flex' 
             }}>
             <img src='./src/assets/Logo.png' alt="Logo" style={{ width: '150px' ,}} />
-            <Typography variant='p' component='p'>
-              {/* فرصت شاپ */}
-            </Typography>
             </Grid>
-            <Typography variant="p" component='p'>تماس با ما</Typography>
+            <Typography
+            mr={5}
+            variant="p" component='h4'>تماس با ما</Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
              <Grid item
                sx={{
@@ -66,7 +69,7 @@ function Footer() {
               <EmailIcon sx={{  color:'#8b72ff' 
                }} />
             </Grid>
-              <Typography variant="p" component='p'>info@example.com</Typography>
+              <Typography variant="p" component='p'>info@forsatshop.top</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
             <Grid item
@@ -89,6 +92,62 @@ function Footer() {
           </Grid>
       </Container>
     </Box>
+    <Box
+     sx={{
+      display:'felx',
+      backgroundColor: '#fff',
+      color: 'GrayText',
+      py: 4,
+      mt: 4,
+    }}>
+          <Grid container>
+            <Grid item
+            sx={{
+              display:'flex',
+              // justifyContent:'space-between',
+              alignItems:'center',
+            }}
+            xs={12}
+            >
+               <Typography
+               sx={{
+                marginLeft:'60px'
+               }}
+          fontWeight={600}
+          variant='p' component='h3'>
+                لینک های مهم
+              </Typography>
+             <Grid item
+             sx={{
+              display:'block',
+             }}>
+             <Typography
+             mb={4}
+             variant='p' component='p'>
+              راهنمای خرید
+              </Typography>
+              <Typography
+               mb={4}
+              variant='p' component='p'>
+              قوانین و مقررات
+              </Typography>
+              <Typography 
+               mb={4}
+              variant='p' component='p'>
+              درباره ما
+              </Typography>
+              <Typography
+               mb={4}
+              variant='p' component='p'>
+              وبلاگ
+              </Typography>
+              <Typography variant='p' component='p'>
+              ثبت شکایات
+              </Typography>
+             </Grid>
+            </Grid>
+          </Grid>
+          </Box>
 
     </div>
   )
