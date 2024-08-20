@@ -21,9 +21,9 @@ function Footer() {
         mt: 4,
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
+          <Grid item  md={12}>
             <Grid item 
             sx={{
               display:'flex' 
@@ -75,18 +75,22 @@ function Footer() {
             <Grid item
               sx={{
                 ml:2,
-                display:'flex',
-                justifyContent:'center',
-                alignItems:'center',
-                width: '40px',
-                  height: '40px',
-                  borderRadius: '15px',
-                  background: 'rgba(139, 114, 255, 0.15)',
-                  fontSize: '17px',
+              display:'flex',
+              justifyContent:'center',
+              alignItems:'center',
+              width: '40px',
+                height: '40px',
+                borderRadius: '15px',
+                background: 'rgba(139, 114, 255, 0.15)',
+                fontSize: '17px',
               }}>
               <LocationOnIcon sx={{ color:'#8b72ff' }} />
             </Grid>
-              <Typography variant="p" component='p'> یزد ، خیابان مطهری ، مجموعه پارک علم و فناوری اقبال ،واحد 270 </Typography>
+              <Typography
+              sx={{
+                marginRight:'10px'
+              }}
+              variant="p" component='p'> یزد ، خیابان مطهری ، مجموعه پارک علم و فناوری اقبال ،واحد 270 </Typography>
             </Box>
           </Grid>
           </Grid>
@@ -100,7 +104,12 @@ function Footer() {
       py: 4,
       mt: 4,
     }}>
-          <Grid container>
+          <Grid container
+          xs={12}
+          sx={{
+            marginRight:'80px'
+          }}
+          >
             <Grid item
             sx={{
               display:'flex',
