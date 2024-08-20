@@ -102,10 +102,11 @@ function Footer() {
       backgroundColor: '#fff',
       color: 'GrayText',
       py: 4,
-      mt: 4,
+      mt: 15,
     }}>
           <Grid container
           sx={{
+            mt: 2,
             marginRight:'150px'
           }}
           >
